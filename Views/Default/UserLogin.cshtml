@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "UserLogin";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<link href="~/Content/style_K/Style_login.css" rel="stylesheet" />
+<div class="container">
+    @*bên trái*@
+    <div class="left">
+        <img src="https://img.freepik.com/premium-vector/login-access-protection_701961-5639.jpg" alt="Hình minh họa đăng nhập">
+    </div>
+    @*bên phải*@
+    <div class="right">
+        <div class="login">
+            <h2>Đăng nhập</h2>
+            <label for="username">Tên đăng nhập:</label>
+            <input type="text" />
+            <label for="password">Mật khẩu:</label>
+            <input type="password" />
+
+            <div class="check">
+                <input type="checkbox" />
+                Nhớ mật khẩu
+            </div>
+
+
+            <a href="#">Quên mật khẩu?</a>
+            <button>Đăng nhập</button>
+            <div class="sighup">
+                Bạn chưa có tài khoản? <a href="#">Tạo tài khoản ngay</a>
+            </div>
+        </div>
+    </div>
+
+</div>

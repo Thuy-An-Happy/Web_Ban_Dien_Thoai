@@ -1,0 +1,238 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    width:100%;
+/*    background-color:antiquewhite;*/
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: #141824;
+}
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+.nav-center{
+    display:flex;
+    flex:1;
+    margin: 0 20px;
+}
+.category {
+    padding: 8px;
+    background: #f3f3f3;
+    border:none;
+    border-radius: 4px 0 0 4px;
+}
+.nav-center input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+.search-btn {
+    background-color: #febd69;
+    border: 8px;
+    padding: 8px 15px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+.nav-right {
+    display: flex; 
+    align-items:center;
+    gap: 15px;
+}
+.btn-right{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background:white;
+    color: #333;
+    border-radius:10px;
+    padding: 10px 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+/*    user-select:none; */
+}
+/* khi re chuot vao*/
+    .btn-right:hover {
+        background: #ff9900;
+        color:#fff;
+        transform: translateY(-3px);
+        box-shadow: 0 4px 12px rgba(255,153,0,0.5);
+    }
+/* khi click*/
+.btn-right:active{
+    transform: scale(0.95);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+    .btn-right i {
+        font-size: 20px;
+    }
+
+    .btn-right a {
+        text-decoration: none; /* bỏ gạch chân */
+        color: inherit; /* cùng màu với cha */
+        font-weight: 500;
+        font-size: 16px;
+    }
+#subnav {
+    background-color: #141824;
+    padding: 8px 20px;
+}
+    #subnav a {
+        text-decoration: none;
+        color: #f5f5f7;
+        font-weight: 500;
+        font-size: 17px;
+        padding: 5px 0;
+    }
+#subnav ul{
+    display: flex;
+    justify-content:center;
+   list-style: none;
+   gap: 20px;
+   font-size: 14px;
+}
+#subnav li{
+  
+    cursor:pointer;
+}
+    #subnav a:hover {
+        color: #ffcc00;
+    }
+/*FOOTERRRRR*/
+.footer {
+    background-color: #131a22;
+    color: white;
+    padding: 40px 60px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+.footer-top{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    margin-bottom:30px;
+}
+.footer-col{
+    margin-bottom: 18px;
+    line-height:1.5;
+}
+.footer-col {
+    border-bottom: 1px solid #3a4553;
+    padding-bottom:15px;
+    text-align:center;
+
+}
+.footer-bottom {
+   
+/*    padding-top: 20px;*/
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+    white-space:pre;/* giu nguyen van ban*/
+}
+/* VanBan     */
+.iphone-info {
+    border: 1px;
+}
+.iphone-info h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #222;
+}
+.iphone-info h3 {
+    font-size: 19px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #222;
+}
+.iphone-info p {
+    margin-bottom: 15px;
+}
+.iphone-info ul {
+    margin: 10px 0 15px 25px;
+}
+
+.iphone-info li {
+    margin-bottom: 5px;
+}
+
+.iphone-info strong {
+    color: #0071e3;
+}
+.info-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 40px;
+    margin: 60px auto;
+    max-width: 1300px; /* Chiều ngang bằng phần Newsfeed */
+    padding: 0 20px;
+}
+
+.info-card {
+    flex: 1;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+    .info-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+
+    .info-card h3 {
+        font-size: 1.5rem;
+        color: #111;
+        margin-bottom: 24px;
+    }
+
+    .info-card ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .info-card li {
+        margin-bottom: 14px;
+    }
+
+    .info-card a {
+        text-decoration: none;
+        color: #444;
+        font-size: 1.05rem;
+        transition: color 0.2s;
+    }
+
+        .info-card a:hover {
+            color: #0071e3; /* Xanh Apple */
+        }
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 900px) {
+    .info-section {
+        flex-direction: column;
+    }
+
+    .info-card {
+        width: 100%;
+    }
+}
+
+

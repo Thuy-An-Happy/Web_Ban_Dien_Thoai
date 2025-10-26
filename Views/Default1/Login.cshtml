@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<link href="~/Content/style_K/Style_login.css" rel="stylesheet" />
+<div class="cart_container">
+    <h3>Thông tin khách hàng</h3>
+
+    <input type="text" placeholder="Họ và Tên">
+    <input type="tel" placeholder="Số điện thoại">
+    <div class="gender">
+        <label><input type="radio" name="gender"> Anh</label>
+        <label><input type="radio" name="gender"> Chị</label>
+    </div>
+
+    <h3>Hình thức nhận hàng</h3>
+    <div class="shipping-method">
+        <label><input type="radio" name="delivery" checked> Giao tận nơi</label>
+        <label><input type="radio" name="delivery"> Nhận tại cửa hàng</label>
+    </div>
+
+    <input type="text" placeholder="Địa chỉ cụ thể">
+    <textarea rows="2" placeholder="Nhập ghi chú (nếu có)"></textarea>
+
+    <div class="checkbox">
+        <input type="checkbox"> <label>Xuất hoá đơn công ty</label>
+    </div>
+
+
+    <div class=""></div>
+
+    <div class="total">
+        <div>Tổng tiền:</div>
+        <span>37.999.000₫</span> @* Note: Có thể thay đổi giá tuỳ theo sản phẩm*@
+    </div>
+
+    <div class="checkbox">
+        <input type="checkbox" checked>
+        <label>Tôi đã đọc và đồng ý với điều khoản & điều kiện của website</label>
+    </div>
+
+    <a href="/Default1/ThanhToan" id="link_btn">
+        
+        <button>Tiến hành đặt hàng</button>
+    </a>
+
+    <p class="note">Bạn có thể lựa chọn các hình thức thanh toán ở bước sau</p>
+</div>
+
