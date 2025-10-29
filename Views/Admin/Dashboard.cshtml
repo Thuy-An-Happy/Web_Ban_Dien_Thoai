@@ -1,0 +1,86 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+
+}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"></script>
+
+<link href="~/Content/style_K/Admin_Style.css" rel="stylesheet" />
+<h2>Welcome to Admin Dashboard</h2>
+
+<p>Dữ liệu dưới đây chỉ là giả để có biểu đồ thống kê.</p>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card p-3 text-center">
+            <h4>Sản phẩm</h4>
+            <p><b>15</b> sản phẩm</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card p-3 text-center">
+            <h4>Đơn hàng</h4>
+            <p><b>8</b> đơn hàng</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card p-3 text-center">
+            <h4>Người dùng</h4>
+            <p><b>5</b> người dùng</p>
+        </div>
+    </div>
+</div>
+
+<hr />
+
+<div class="row mt-4">
+    <div class="col-md-6">
+        <div class="card p-3">
+            <h5 class="text-center mb-3"> Doanh thu theo tháng</i></h5>
+            <canvas id="revenueChart"></canvas>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card p-3">
+            <h5 class="text-center mb-3"> Tỷ lệ danh mục sản phẩm</h5>
+            <canvas id="categoryChart"></canvas>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Biểu đồ cột - Doanh thu
+    const ctx1 = document.getElementById('revenueChart').getContext('2d');
+    const revenueChart = new Chart(ctx1, {
+        type: 'bar',
+        data: {
+            labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6'],
+            datasets: [{
+                label: 'Doanh thu (triệu ₫)',
+                data: [120, 150, 180, 90, 200, 250],
+                backgroundColor: '#3498db'
+            }]
+        },
+        options: {
+            scales: {
+                y: { beginAtZero: true }
+            }
+        }
+    });
+
+    // Biểu đồ tròn - Tỷ lệ danh mục
+    const ctx2 = document.getElementById('categoryChart').getContext('2d');
+    const categoryChart = new Chart(ctx2, {
+        type: 'pie',
+        data: {
+            labels: ['Điện thoại'],
+            datasets: [{
+                label: 'Tỷ lệ sản phẩm',
+                data: [100],
+                backgroundColor: ['#1abc9c']
+            }]
+        },
+        options: {
+            responsive: true
+        }
+    });</script>

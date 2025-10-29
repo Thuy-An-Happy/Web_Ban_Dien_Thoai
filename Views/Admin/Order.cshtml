@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Quản lý đơn hàng";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<link href="~/Content/style_K/Admin_Style.css" rel="stylesheet" />
+<h2>Danh sách đơn hàng</h2>
+
+<table class="table table-hover table-bordered mt-3">
+    <thead class="table-dark">
+        <tr>
+            <th>#</th>
+            <th>Mã đơn</th>
+            <th>Khách hàng</th>
+            <th>Ngày đặt</th>
+            <th>Tổng tiền</th>
+            <th>Trạng thái</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>ORD001</td>
+            <td>Nguyễn Văn A</td>
+            <td>28/10/2025</td>
+            <td>35.000.000 ₫</td>
+            <td><span class="badge bg-warning text-dark">Chờ xác nhận</span></td>
+            <td>
+                <button class="btn btn-sm btn-success"><i class="fa fa-check"></i></button>
+                <button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>ORD002</td>
+            <td>Trần Thị B</td>
+            <td>29/10/2025</td>
+            <td>28.000.000 ₫</td>
+            <td><span class="badge bg-success">Đã giao</span></td>
+            <td>
+                <button class="btn btn-sm btn-secondary"><i class="fa fa-eye"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>ORD003</td>
+            <td>Lê Minh C</td>
+            <td>27/10/2025</td>
+            <td>15.000.000 ₫</td>
+            <td><span class="badge bg-danger">Đã hủy</span></td>
+            <td>
+                <button class="btn btn-sm btn-secondary"><i class="fa fa-eye"></i></button>
+            </td>
+        </tr>
+    </tbody>
+</table>

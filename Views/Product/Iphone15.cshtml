@@ -1,21 +1,20 @@
 ﻿
 @{
-    ViewBag.Title = "IpadAirM3";
+    ViewBag.Title = "Iphone15";
     Layout = "~/Views/Shared/_HomeLayout.cshtml";
 }
 
-<h2>IpadAirM3</h2>
 <link href="~/Content/style_K/Style_TrangCuThe.css" rel="stylesheet" />
 <section class="container">
     @*Hình ảnh sản phẩm*@
     <div class="product-image">
-        <img src="~/Content/img/0035054_ipad-air-m3-11-inch-wi-fi_240.png">
+        <img src="https://cdn2.cellphones.com.vn/x/media/catalog/product/i/p/iphone-15-plus_1__1.png"  alt="IPhone 15" />
     </div>
 
     @*Thông tin sản phẩm*@
     <div class="product-info">
-        <h1>Ipad Air M3</h1>
-        <p class="price">17.490.000₫ <span class="old-price">27.990.000₫</span></p>
+        <h1>iPhone 15</h1>
+        <p class="price">16.490.000₫ @*<span class="old-price">19.999.000₫</span>*@</p>
         <p class="vat">(Đã bao gồm VAT)</p>
 
         <div class="section">
@@ -37,7 +36,19 @@
                 <span class="color yellow"></span>
             </div>
         </div>
-        <button class="buy-btn" onclick="window.location.href='cart.html'">MUA NGAY</button>
+
+        <div class="section">
+            <h3>Ưu đãi</h3>
+            <ul class="offers">
+                <li>Giảm 200.000đ khi thanh toán qua VNPAY.</li>
+                <li>Hỗ trợ trả góp 0% lãi suất.</li>
+                <li>Ốp lưng chính hãng giảm 990.000đ khi mua kèm.</li>
+                <li>Thu cũ đổi mới – trợ giá lên đến 1.000.000đ.</li>
+            </ul>
+        </div>
+
+        <button class="buy-btn" >MUA NGAY</button>
     </div>
+    <script src="~/Content/js/Cart_JS.js"></script>
 </section>
 

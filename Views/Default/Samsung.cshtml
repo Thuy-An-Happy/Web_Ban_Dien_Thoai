@@ -1,0 +1,154 @@
+﻿
+@{
+    ViewBag.Title = "Samsung";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+<link href="~/Content/style_K/Style_TrangCon.css" rel="stylesheet" />
+
+<link href="~/Content/style_K/Style_silder.css" rel="stylesheet" />
+
+@*   breadcrumb     *@
+<nav class="breadcrumb">
+    <a href="/Default/Index">Trang chủ </a>> <span>SamSung</span>
+</nav>
+@*banner*@
+
+<section class="banner-section">
+    <div class="slider">
+        <div class="slides">
+            <div class="slide" onclick="window.location.href=''">
+                <img src="~/Content/img/banner iP17pro-ĐC2_Danh mục.png">
+            </div>
+            <div class="slide" onclick="window.location.href=''">
+                <img src="~/Content/img/banner1.png">
+            </div>
+            <div class="slide" onclick="window.location.href=''">
+                <img src="~/Content/img/danh mục-ip.png">
+            </div>
+            <div class="slide" onclick="window.location.href=''">
+                <img src="~/Content/img/danh mục-ip_Danh mục copy 3.png" style="width:1200px;height:450px">
+            </div>
+        </div>
+
+        @*Nút điều hướng*@
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+
+        @*Dấu chấm*@
+        <div class="dots"></div>
+    </div>
+</section>
+<script src="~/Content/js/js_banner.js"></script>
+
+@*Sản Phẩm Của Trang*@
+
+<section class="product-grid">
+
+    <a href="/Product/S25Ultra" class="product-card">
+        @*<div class="Tag New">Mới</div>*@
+        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-s25-ultra_3__3.png"
+             alt="Samsung Galaxy S25 Ultra 12GB 256GB" />
+
+        <h3>Samsung S25 Ultra </h3>
+        <p class="price">28.990.000đ</p>
+    </a>
+
+    <a href="/Product/S24Plus" class="product-card">
+        @*<div class="Tag Sale">Giảm 0%</div>
+            <div class="Tag New">Mới</div>*@
+
+        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-plus-tim.png"
+             alt="Samsung Galaxy S24 Plus 12GB 256GB" />
+
+        <h3>Samsung Galaxy S24 Plus</h3>
+        <p class="price">16.699.000đ</p>
+    </a>
+
+    <a href="/Product/ZFold7_G" class="product-card">
+
+        @*<div class="Tag Sale">Giảm 0%</div>
+            <div class="Tag New">Mới</div>*@
+
+        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-z-fold-7-xanh.jpg"
+             alt="Samsung Galaxy Z Fold7 12GB 256GB" />
+
+        <h3>Samsung Galaxy Z Fold7</h3>
+        <p class="price">42.999.000đ</p>
+    </a>
+
+    <a href="/Product/M55_G" class="product-card">
+
+        @*<div class="Tag Sale">Giảm 0%</div>
+            <div class="Tag New">Mới</div>*@
+
+        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-m55_2.png"
+             alt="Samsung Galaxy M55 5G 8GB 256GB" />
+
+        <h3>Samsung Galaxy M55 5G</h3>
+        <p class="price">6.999.000đ</p>
+    </a>
+
+    <a href="/Product/A56_G" class="product-card">
+
+        @*<div class="Tag Sale">Giảm 0%</div>
+            <div class="Tag New">Mới</div>*@
+
+        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-a56.1_1.png"
+             alt="Samsung Galaxy A56 5G 8GB 128GB" />
+
+        <h3>Samsung Galaxy A56</h3>
+        <p class="price">9.499.000đ</p>
+    </a>
+
+    <a href="/Product/S25FE" class="product-card">
+
+        @*<div class="Tag Sale">Giảm 0%</div>
+            <div class="Tag New">Mới</div>*@
+
+        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-s25-fe-1.jpg"
+             alt="Samsung Galaxy S25 FE 8GB 128GB" />
+
+
+        <h3>Samsung Galaxy S25 FE</h3>
+        <p class="price">14.000.000đ</p>
+    </a>
+
+    <a href="/Product/ZFlip7_G" class="product-card">
+
+        @*<div class="Tag Sale">Giảm 0%</div>
+            <div class="Tag New">Mới</div>*@
+
+        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-z-flip-7-xanh.jpg"
+             alt="Samsung Galaxy Z Flip7 12GB 256GB" />
+
+        <h3>Samsung Galaxy Z Flip7</h3>
+        <p class="price">26.499.000đ</p>
+    </a>
+
+    <a href="/Product/A36" class="product-card">
+
+        @*<div class="Tag Sale">Giảm 0%</div>
+        <div class="Tag New">Mới</div>*@
+
+        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-a36.2.png"
+             alt="Samsung Galaxy A36 5G 8GB 128GB" />
+
+        <h3>Samsung Galaxy A36</h3>
+        <p class="price">7.499.000đ</p>
+    </a>
+
+    <a href="/Product/A07_G" class="product-card">
+
+        @*<div class="Tag Sale">Giảm 0%</div>
+        <div class="Tag New">Mới</div>*@
+
+        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-a07-black.jpg"
+             alt="Samsung Galaxy A07 4GB 128GB" />
+
+
+        <h3>Samsung Galaxy A07</h3>
+        <p class="price">3.999.000đ</p>
+    </a>
+</section>
+

@@ -25,27 +25,16 @@ namespace DoAn_web.Controllers
         {
             return View();
         }
-        public ActionResult TrangMac()
+        public ActionResult Samsung()
         {
             return View();
         }
-        public ActionResult TrangWatch()
+        public ActionResult Xiaomi()
         {
             return View();
         }
-        public ActionResult TrangIpad()
-        {
-            return View();
-        }
-        public ActionResult TrangMussic()
-        {
-            return View();
-        }
-        public ActionResult TrangCamera()
-        {
-            return View();
-        }
-        public ActionResult TrangAccessory()
+        public ActionResult Oppo
+            ()
         {
             return View();
         }

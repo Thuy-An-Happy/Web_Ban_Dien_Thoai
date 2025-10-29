@@ -52,6 +52,7 @@ justify-content:center;
     margin: 0 auto;
 }
 .product-card {
+
     display: block; /* click toan khoi*/
     background: #fff;
     border-radius: 12px;
@@ -70,7 +71,7 @@ justify-content:center;
     }
     /* nhat cai iphone len*/
     .product-card img {
-        width: 100%;
+        width:240px;
         border-radius: 10px;
         transition: transform 0.3s ease;
     }

@@ -22,7 +22,7 @@ body {
     transition:0.3s;
 }
 .product-image img {
-    width: 380px;
+    width: 350px;
     border-radius: 12px;
     transition: transform 0.4s ease;
 }

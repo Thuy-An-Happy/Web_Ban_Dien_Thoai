@@ -1,0 +1,186 @@
+﻿
+@{
+    ViewBag.Title = "Xiaomi";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+<link href="~/Content/style_K/Style_TrangCon.css" rel="stylesheet" />
+
+<link href="~/Content/style_K/Style_silder.css" rel="stylesheet" />
+
+@*   breadcrumb     *@
+<nav class="breadcrumb">
+    <a href="/Default/Index">Trang chủ </a>> <span>Xiaomi</span>
+</nav>
+@*banner*@
+
+<section class="banner-section">
+    <div class="slider">
+        <div class="slides">
+            <div class="slide" onclick="window.location.href=''">
+                <img src="~/Content/img/banner iP17pro-ĐC2_Danh mục.png">
+            </div>
+            <div class="slide" onclick="window.location.href=''">
+                <img src="~/Content/img/banner1.png">
+            </div>
+            <div class="slide" onclick="window.location.href=''">
+                <img src="~/Content/img/danh mục-ip.png">
+            </div>
+            <div class="slide" onclick="window.location.href=''">
+                <img src="~/Content/img/danh mục-ip_Danh mục copy 3.png" style="width:1200px;height:450px">
+            </div>
+        </div>
+
+        @*Nút điều hướng*@
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+
+        @*Dấu chấm*@
+        <div class="dots"></div>
+    </div>
+</section>
+
+@*Danh sách sản phẩm*@
+<section class="product-grid">
+
+    <a href="/Product/Xiaomi_11T" class="product-card">
+        @*<div class="Tag New">Mới</div>*@
+        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi-mi-11t-1_1_2_1_1_2_1.jpg"
+             alt="Xiaomi Mi 11T 8GB 128GB - Cũ Xước Cấn" />
+
+        <h3>Xiaomi Mi 11T </h3>
+        <p class="price">3.990.000đ</p>
+    </a>
+
+    <a href="/Product/Xiaomi_14T_Pro" class="product-card">
+        @*<div class="Tag Sale">Giảm 0%</div>
+            <div class="Tag New">Mới</div>*@
+
+        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi_14t_pro_1_.png"
+             alt="Xiaomi 14T Pro 12GB 512GB" />
+
+        <h3>Xiaomi 14T Pro</h3>
+        <p class="price">14.390.000đ</p>
+    </a>
+
+    <a href="/Product/Xiaomi_15" class="product-card">
+
+        @*<div class="Tag Sale">Giảm 0%</div>
+            <div class="Tag New">Mới</div>*@
+
+        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/m/image_1262703569.jpg"
+             alt="Xiaomi 15 5G 12GB 512GB" />
+
+        <h3>Xiaomi 15 5G</h3>
+        <p class="price">21.990.000đ</p>
+    </a>
+
+    <a href="/Product/Xiaomi_15_Ultra" class="product-card">
+
+        @*<div class="Tag Sale">Giảm 0%</div>
+            <div class="Tag New">Mới</div>*@
+
+        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/p/h/photo_2025-04-16_11-45-37.jpg"
+             alt=" Xiaomi 15 Ultra 5G 16GB 1TB " />
+
+        <h3>Xiaomi 15 Ultra</h3>
+        <p class="price">28.990.000đ</p>
+    </a>
+
+
+    <a href="/Product/Xiaomi_15T" class="product-card">
+
+        @*<div class="Tag Sale">Giảm 0%</div>
+            <div class="Tag New">Mới</div>*@
+
+        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi-15t-5g-22.jpg"
+             alt="Xiaomi 15T 5G 12GB 512GB" />
+
+        <h3>Xiaomi 15T 5G</h3>
+        <p class="price">14.990.000đ</p>
+    </a>
+
+    <a href="/Product/Xiaomi_Note_14" class="product-card">
+
+        @*<div class="Tag Sale">Giảm 0%</div>
+            <div class="Tag New">Mới</div>*@
+
+        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-xiaomi-redmi-note-14_2__2.png"
+             alt="Xiaomi Redmi Note 14 6GB 128GB" />
+
+        <h3>Xiaomi Redmi Note 14</h3>
+        <p class="price">4.990.000đ</p>
+    </a>
+
+    <a href="/Product/Xiaomi_POCO_C71" class="product-card">
+
+        @*<div class="Tag Sale">Giảm 0%</div>
+            <div class="Tag New">Mới</div>*@
+
+        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-xiaomi-poco-c71_2__1.png"
+             alt="Xiaomi POCO C71 4GB 128GB" />
+
+        <h3>Xiaomi POCO C71</h3>
+        <p class="price">2.550.000đ</p>
+    </a>
+
+    <a href="/Product/Xiaomi_POCO_X6" class="product-card">
+
+        @*<div class="Tag Sale">Giảm 0%</div>
+            <div class="Tag New">Mới</div>*@
+
+        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi-poco-x6-5g-8gb-256gb-1.png"
+             alt="Xiaomi POCO X6 5G 8GB 256GB - Cũ Đẹp" />
+
+        <h3>Xiaomi POCO X6 5G</h3>
+        <p class="price">6.990.000đ</p>
+    </a>
+
+    <a href="/Product/Xiaomi_POCO_X7" class="product-card">
+
+        @*<div class="Tag Sale">Giảm 0%</div>
+            <div class="Tag New">Mới</div>*@
+
+        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-xiaomi-poco-x7-5g.png"
+             alt="Xiaomi POCO X7 5G 12GB 512GB" />
+
+        <h3>Xiaomi POCO X7 5G</h3>
+        <p class="price">7.990.000đ</p>
+    </a>
+
+    <a href="/Product/Xiaomi_Redmi_14C" class="product-card">
+
+        @*<div class="Tag Sale">Giảm 0%</div>
+            <div class="Tag New">Mới</div>*@
+
+        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi_redmi_14c_5_.png"
+             alt="Xiaomi Redmi 14C 4GB 128GB" />
+
+        <h3>Xiaomi Redmi 14C</h3>
+        <p class="price">2.850.000đ</p>
+    </a>
+
+    <a href="/Product/Xiaomi_Redmi_15C" class="product-card">
+
+        @*<div class="Tag Sale">Giảm 0%</div>
+            <div class="Tag New">Mới</div>*@
+
+        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-xiaomi-redmi-15c-41_1.jpg"
+             alt="Xiaomi Redmi 15C 4GB 128GB NFC" />
+
+        <h3>Xiaomi Redmi 15C</h3>
+        <p class="price">3.490.000đ</p>
+    </a>
+
+    <a href="/Product/Xiaomi_Redmi_Note_13_Pro" class="product-card">
+
+        @*<div class="Tag Sale">Giảm 0%</div>
+        <div class="Tag New">Mới</div>*@
+        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/p/h/photo_2024-12-20_17-05-54_1.jpg"
+             alt="Xiaomi Redmi Note 13 Pro 5G 8GB 256GB  - 6" />
+
+        <h3>Xiaomi Redmi Note 13 Pro 5G</h3>
+        <p class="price">8.290.000₫ <span class="old-price">10.990.000₫</span></p>
+    </a>
+
+</section>
