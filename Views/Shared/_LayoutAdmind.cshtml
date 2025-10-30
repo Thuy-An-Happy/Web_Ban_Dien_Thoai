@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - Admin Dashboard</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+    <link href="~/Content/style_K/Admin_Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="admin-container">
+        <nav class="sidebar">
+            <h2>Admin Panel</h2>
+            <ul>
+                <li><a href="@Url.Action("Dashboard", "Admin")"><i class="fa fa-home"></i> Dashboard</a></li>
+                <li><a href="@Url.Action("Products", "Admin")"><i class="fa fa-box"></i> Products</a></li>
+                <li><a href="@Url.Action("Order", "Admin")"><i class="fa fa-shopping-cart"></i> Orders</a></li>
+                <li><a href="@Url.Action("Users", "Admin")"><i class="fa fa-users"></i> Users</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <header>
+                <h3>@ViewBag.Title</h3>
+                <a href="@Url.Action("Index", "Home")" class="btn btn-sm btn-primary">Back to Site</a>
+            </header>
+
+            <section class="content">
+                @RenderBody()
+            </section>
+        </div>
+    </div>
+</body>
+</html>
