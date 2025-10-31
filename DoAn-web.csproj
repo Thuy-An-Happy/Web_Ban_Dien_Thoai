@@ -334,6 +334,7 @@
     <Content Include="Views\Product\Oppo_A79.cshtml" />
     <Content Include="Views\Product\Oppo_A18.cshtml" />
     <Content Include="Views\Product\Oppo_Find_N3.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdmind.cshtml" />
     <Content Include="Views\Admin\Products.cshtml" />
     <Content Include="Views\Admin\Order.cshtml" />
     <Content Include="Views\Admin\Dashboard.cshtml" />
